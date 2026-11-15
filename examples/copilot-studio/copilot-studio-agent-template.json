@@ -1,0 +1,34 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Digadop Help",
+    "description": "Digadop Help MCP server for Microsoft Copilot Studio. Lets an agent search and read your Digadop Help articles.",
+    "version": "1.0.0"
+  },
+  "host": "your-digadop-api-host.example.com",
+  "basePath": "/",
+  "schemes": ["https"],
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://your-digadop-api-host.example.com/oauth/authorize",
+      "tokenUrl": "https://your-digadop-api-host.example.com/oauth/token",
+      "scopes": {}
+    }
+  },
+  "security": [{ "oauth2": [] }],
+  "paths": {
+    "/mcp/help": {
+      "post": {
+        "summary": "Digadop Help MCP server",
+        "description": "Streamable-HTTP MCP endpoint. Tools are discovered by Copilot Studio through tools/list.",
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeMCP",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      }
+    }
+  }
+}
