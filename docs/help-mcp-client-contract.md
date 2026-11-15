@@ -1,6 +1,6 @@
 # Digadop Help MCP: client contract and published limitations
 
-This is the client-facing contract for the Digadop Help MCP server (`/mcp/help`). It describes the tools the server exposes, their exact result shapes, and one published limitation every integrator should read before building on this server.
+This is the client-facing contract for the **standalone** Digadop Help MCP server (`/mcp/help`), early access, not the `help_*` tools already live on the Who Sees What MCP server. If your org has a Who Sees What Enterprise credential plus a Digadop Help entitlement, `https://whoseeswhat.com/mcp` already serves a different Help tool catalog today (`help_list_content`, `help_analyze_content_audience`, and others); see [whoseeswhat.com/developers/mcp](https://whoseeswhat.com/developers/mcp/) for that one. The server documented below is a separate surface, with its own tools and its own grounding-attestation contract, described here. It describes the tools the server exposes, their exact result shapes, and one published limitation every integrator should read before building on this server.
 
 ## Tool catalog
 
