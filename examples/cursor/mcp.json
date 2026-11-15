@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "digadop": {
+      "url": "https://<your-gateway-host>/mcp",
+      "headers": { "Authorization": "Bearer <your-token>" }
+    }
+  }
+}
